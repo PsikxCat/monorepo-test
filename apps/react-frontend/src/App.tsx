@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { isEmpty } from 'utils'
+import { isEmpty, myFunction } from 'utils'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="flex_center">
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -30,10 +30,14 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-
-      <pre>{isEmpty('abc')}</pre>
-      <pre>{isEmpty(null)}</pre>
+      <p className="read-the-docs text-stone-700">Click on the Vite and React logos to learn more</p>
+      <div className="flex_center border border-red-500 ">
+        <pre>{isEmpty('abc')}</pre>
+        <pre>{isEmpty(null)}</pre>
+      </div>
+      <div className="flex_center border border-green-500">
+        <pre>{myFunction()}</pre>
+      </div>
     </>
   )
 }
