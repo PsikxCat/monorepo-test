@@ -31,11 +31,11 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs text-stone-700">Click on the Vite and React logos to learn more</p>
-      <div className="flex_center border border-red-500 ">
+      <div className="flex_center m-3 rounded-lg bg-white/20">
         <pre>{isEmpty('abc')}</pre>
         <pre>{isEmpty(null)}</pre>
       </div>
-      <div className="flex_center border border-green-500">
+      <div className="flex_center border border-green-500 rounded-lg m-3">
         <pre>{myFunction()}</pre>
       </div>
     </>

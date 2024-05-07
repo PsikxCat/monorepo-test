@@ -1,4 +1,6 @@
-module.exports = {
+import { parser as tsParser } from '@typescript-eslint/parser'
+
+const config = {
   env: {
     browser: true,
     es2021: true,
@@ -15,7 +17,7 @@ module.exports = {
       },
     },
   ],
-  parser: '@typescript-eslint/parser',
+  parser: tsParser,
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -52,3 +54,5 @@ module.exports = {
     '@typescript-eslint/triple-slash-reference': 'off',
   },
 }
+
+export default config
